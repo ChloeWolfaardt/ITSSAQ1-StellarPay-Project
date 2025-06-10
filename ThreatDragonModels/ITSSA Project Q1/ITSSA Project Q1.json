@@ -827,18 +827,26 @@
               "threats": [
                 {
                   "id": "75210b45-fddf-4d64-b6d5-e54c381ab946",
-                  "title": "New STRIDE threat",
+                  "title": "PAYMENT GATEWAY THREAT",
                   "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "The manipulation of transaction details in-transit.\nVulnerability: Attackers changing banking details, this can lead to transaction theft or fraud.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 5,
-                  "score": ""
+                  "score": "8"
                 }
-              ]
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -961,7 +969,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "The attackers can fake the existing user's identity. This can lead to the attacker gaining access to the APIs",
+                  "description": "The attackers can fake the existing user's identity. \nVulnerability: The attacker gaining unauthorized access to the APIs.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -970,9 +978,16 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1118,13 +1133,6 @@
                 "informationDisclosure": 0,
                 "denialOfService": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
