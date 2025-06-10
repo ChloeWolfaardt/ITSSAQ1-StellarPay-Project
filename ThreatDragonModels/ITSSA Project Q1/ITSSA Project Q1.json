@@ -179,7 +179,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Spoofing",
-                  "description": "Attackers can gain your credentials and log into your banking application. This will give them access to your personal identification details as well as your banking details. This can lead to theft or fraud.",
+                  "description": "Attackers can gain your credentials and log into your banking application. This will give them access to your personal identification details as well as your banking details.\nVulnerability: The use of passwords or usernames that have been leaked.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -188,7 +188,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
             }
@@ -690,7 +690,7 @@
                   "status": "Open",
                   "severity": "Critical",
                   "type": "Information disclosure",
-                  "description": "User data can be exposed as well as transaction logs, or even the credentials of the users via insecure interface. This can happen because of no passwords or encryption",
+                  "description": "User data can be exposed as well as transaction logs, or even the credentials of the users via insecure interface. \nVulnerability: This can happen because of weak passwords or encryption.\n",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -702,7 +702,7 @@
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -1104,7 +1104,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Overloading of queries can lead to downtime on the Database. This can lead to important work not to be done on the application.",
+                  "description": "Overloading of queries can lead to downtime on the Database. This can lead to important work not to be done on the application.\nVulnerability: Users have more permissions than necessary.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1116,8 +1116,15 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1
+                "denialOfService": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1243,7 +1250,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "The attacker can spoof the user/admin identities via credential theft.",
+                  "description": "The attacker can spoof the user/admin identities via credential theft.\nVulnerability: The attacker can access restricted files. This is also known as Directory traversal attacks",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1252,7 +1259,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
