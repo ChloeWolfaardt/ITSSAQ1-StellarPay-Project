@@ -28,8 +28,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d71cbefb-cd78-469e-a6e9-0b70c3867a3d",
             "zIndex": -1,
+            "id": "d71cbefb-cd78-469e-a6e9-0b70c3867a3d",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -49,8 +49,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "03cb60a2-512d-45d4-9511-0b202e56f19f",
             "zIndex": -1,
+            "id": "03cb60a2-512d-45d4-9511-0b202e56f19f",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -80,6 +80,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -163,7 +164,6 @@
               ]
             },
             "id": "cd036181-09fb-49fd-b6f3-4f35a8adb528",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User Login",
@@ -588,6 +588,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -671,7 +672,6 @@
               ]
             },
             "id": "81dca73a-58f7-41a7-b26e-36a271583758",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Admin Portal",
@@ -729,6 +729,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -812,7 +813,6 @@
               ]
             },
             "id": "5943b7e1-f52e-4c9f-a94b-b3d85cb44e1e",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Payment Gateway",
@@ -862,6 +862,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -945,7 +946,6 @@
               ]
             },
             "id": "40d5c736-aaad-43c8-a403-22d42bb55ea2",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "API Endpoints",
@@ -1001,6 +1001,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1084,7 +1085,6 @@
               ]
             },
             "id": "ed49afee-ffec-4919-bf67-12658a57a0f8",
-            "zIndex": 16,
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -1141,6 +1141,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1224,7 +1225,6 @@
               ]
             },
             "id": "cf2d831e-d8ad-429a-bd25-266833978cea",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "Web Server",
