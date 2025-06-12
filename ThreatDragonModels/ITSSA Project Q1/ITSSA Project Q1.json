@@ -73,8 +73,8 @@
                 "text": "User Login"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -170,17 +170,17 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": [
                 {
                   "id": "5a4b95f0-3162-4858-8797-c4e8ad8cd0df",
                   "title": "USER LOGIN THREAT",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "type": "Spoofing",
                   "description": "Attackers can gain your credentials and log into your banking application. This will give them access to your personal identification details as well as your banking details.\nVulnerability: The use of passwords or usernames that have been leaked.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "The organization can add an extra layer of security to prevent any unauthorized access by attackers even if there are credentials leaked. As well to impose rules on password strengthening, reusing, and breach prevention",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
@@ -188,7 +188,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 4,
                 "repudiation": 0
               }
             }
@@ -581,8 +581,8 @@
                 "text": "Admin Portal"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -678,7 +678,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -687,11 +687,11 @@
                 {
                   "id": "287b3e31-2b93-4a5d-a9a4-0d6d237fdcb2",
                   "title": "ADMIN PORTAL THREAT",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Critical",
                   "type": "Information disclosure",
                   "description": "User data can be exposed as well as transaction logs, or even the credentials of the users via insecure interface. \nVulnerability: This can happen because of weak passwords or encryption.\n",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Enforce the use of very strong passwords and use encryption methods such as AES-256 for data at rest, in-transit use HTTPS (TLS 1.2+), and for any credentials use hash passkeys with Argon2. As well defining all standards for password handling, securing access and encryption",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
@@ -702,7 +702,7 @@
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -710,8 +710,8 @@
           },
           {
             "position": {
-              "x": 1165,
-              "y": 515
+              "x": 1160,
+              "y": 510
             },
             "size": {
               "width": 130,
@@ -722,8 +722,8 @@
                 "text": "Payment Gateway"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -819,7 +819,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -828,11 +828,11 @@
                 {
                   "id": "75210b45-fddf-4d64-b6d5-e54c381ab946",
                   "title": "PAYMENT GATEWAY THREAT",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "type": "Tampering",
                   "description": "The manipulation of transaction details in-transit.\nVulnerability: Attackers changing banking details, this can lead to transaction theft or fraud.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Demand confirmations from users before processing any transactions, maybe using out-of-band mechanisms such as SMS or email. As well making sure that changes to banking information are verified and look over high-risk transactions.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -841,7 +841,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -863,8 +863,8 @@
                 "text": "API Endpoints"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -960,17 +960,17 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": [
                 {
                   "id": "b0a8ef2c-8e33-4249-8929-a5d501daa0ea",
                   "title": "API ENDPOINTS THREAT",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "The attackers can fake the existing user's identity. \nVulnerability: The attacker gaining unauthorized access to the APIs.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "With multi-factor authentication (MFA), secure token-based authentication (OAuth2/JWT). As well as policies and guidelines for API security and access, and training for developers and administrators, as well as regular access reviews.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
@@ -978,21 +978,14 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
             "position": {
-              "x": 820,
+              "x": 830,
               "y": 450
             },
             "size": {
@@ -1004,13 +997,11 @@
                 "text": "Database"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1106,7 +1097,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
@@ -1116,11 +1107,11 @@
                 {
                   "id": "01a614e8-1c96-4ec2-8a3f-db44090a8152",
                   "title": "DATABASE THREAT",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Overloading of queries can lead to downtime on the Database. This can lead to important work not to be done on the application.\nVulnerability: Users have more permissions than necessary.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Overloading of queries can lead to downtime on the Database. This can lead to important work not to be done on the application.\nVulnerability: Users have more permissions than necessary. It can happen that users within the business leak passwords and details to attackers",
+                  "mitigation": "Put Role-Based Access Control (RBAC) into practice. Perform frequent access evaluations and authorization audits.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
@@ -1131,7 +1122,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 2
+                "denialOfService": 4
               }
             }
           },
@@ -1149,8 +1140,8 @@
                 "text": "Web Server"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1246,7 +1237,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1255,11 +1246,11 @@
                 {
                   "id": "294e8ed7-977a-490a-93a7-bbd1afbd6739",
                   "title": "WEB SERVER THREAT",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "The attacker can spoof the user/admin identities via credential theft.\nVulnerability: The attacker can access restricted files. This is also known as Directory traversal attacks",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Make sure that file paths are safe and that access permissions are followed. Restrict server file access to specific folders with minimal privileges. Establish file access guidelines and make MFA mandatory for administrators and users.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
@@ -1267,7 +1258,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
