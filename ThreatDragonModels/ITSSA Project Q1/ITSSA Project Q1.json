@@ -1124,6 +1124,13 @@
                 "informationDisclosure": 0,
                 "denialOfService": 4
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
